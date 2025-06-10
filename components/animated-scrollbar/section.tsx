@@ -1,4 +1,4 @@
-import { sectionsContext } from "@/app/animated-scrollbar/page";
+import { SectionsContext } from "@/app/animated-scrollbar/sections-context";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import React, { useContext, useRef } from "react";
 
@@ -11,7 +11,7 @@ const colors = ["#6c5ce7", "#00cec9", "#636e72", "#d63031", "#00b894"];
 
 const Section: React.FC<SectionPropsType> = ({ id, title }) => {
   const { setCurrentSection, setSectionProgress, bulletsCount } =
-    useContext(sectionsContext);
+    useContext(SectionsContext);
   const ref = useRef<HTMLDivElement>(null);
 
   const isFirst = id === 0;

@@ -1,4 +1,4 @@
-import { sectionsContext } from "@/app/animated-scrollbar/page";
+import { SectionsContext } from "@/app/animated-scrollbar/sections-context";
 import { motion } from "motion/react";
 import React, { useContext } from "react";
 
@@ -7,7 +7,7 @@ type BulletsPropsType = {
 };
 
 const Bullets: React.FC<BulletsPropsType> = ({ bulletsCount }) => {
-  const { currentSection, sectionProgress } = useContext(sectionsContext);
+  const { currentSection, sectionProgress } = useContext(SectionsContext);
   return (
     <div className="fixed flex flex-col gap-2 top-1/2 -translate-y-1/2 right-6 ">
       {Array.from({ length: bulletsCount }).map((_, index) => {
