@@ -6,7 +6,7 @@ Welcome to my collection of mini projects built using **Framer Motion**, a power
 
 ## 🚀 Technologies Used
 
-- **NextJs** (via Vite or Create React App)
+- **NextJs**
 - **Framer Motion**
 - **Tailwind CSS**
 - **TypeScript**
