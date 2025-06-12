@@ -43,15 +43,17 @@ function AnimatedScrollBar() {
 
   useEffect(() => {
     values.setBulletsCount(sections.length);
-  }, [sections.length]);
+  }, [sections.length, values]);
 
   return (
-    <SectionsContext.Provider value={values}>
-      <Bullets bulletsCount={sections.length} />
-      {sections.map(({ id, title }) => (
-        <Section key={`section-${id}`} id={id} title={title} />
-      ))}
-    </SectionsContext.Provider>
+    <div className="remove-scroll">
+      <SectionsContext.Provider value={values}>
+        <Bullets bulletsCount={sections.length} />
+        {sections.map(({ id, title }) => (
+          <Section key={`section-${id}`} id={id} title={title} />
+        ))}
+      </SectionsContext.Provider>
+    </div>
   );
 }
 

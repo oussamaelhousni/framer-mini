@@ -13,6 +13,11 @@ export default function Home() {
               Animated scrollbar
             </Link>
           </li>
+          <li className="mb-2 tracking-[-.01em]">
+            <Link href="/skew-on-scroll" className="text-blue-500 underline">
+              Skew text on scroll
+            </Link>
+          </li>
         </ul>
       </main>
     </div>
