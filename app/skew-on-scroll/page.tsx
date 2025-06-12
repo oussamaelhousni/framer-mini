@@ -25,6 +25,7 @@ function SkewOnScroll() {
     stiffness: 300,
     damping: 20,
   });
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
   return (
     <div>
       <section className="bg-red-500 w-full h-screen flex items-center justify-center">
@@ -32,9 +33,10 @@ function SkewOnScroll() {
       </section>
       <motion.section className="relative h-[300vh] bg-green-800" ref={ref}>
         <motion.div className="h-screen flex items-center sticky top-0 left-0 overflow-x-hidden">
-          <Image
-            src={formula1}
+          <motion.img
+            src={formula1.src}
             className="w-full h-full inset-0 absolute object-cover"
+            style={{ scale }}
             alt="formula"
           />
           <div className="w-full h-full inset-0 absolute object-cover bg-black/50"></div>
