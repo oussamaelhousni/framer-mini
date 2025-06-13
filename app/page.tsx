@@ -18,6 +18,11 @@ export default function Home() {
               Skew text on scroll
             </Link>
           </li>
+          <li className="mb-2 tracking-[-.01em]">
+            <Link href="/kanban-board" className="text-blue-500 underline">
+              Kanban board With Dnd-Kit
+            </Link>
+          </li>
         </ul>
       </main>
     </div>
