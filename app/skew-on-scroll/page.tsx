@@ -6,7 +6,7 @@ import {
   useTransform,
   useVelocity,
 } from "motion/react";
-import Image from "next/image";
+
 import React, { useRef } from "react";
 import formula1 from "./formula-1.jpg";
 function SkewOnScroll() {

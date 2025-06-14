@@ -19,8 +19,11 @@ export default function Home() {
             </Link>
           </li>
           <li className="mb-2 tracking-[-.01em]">
-            <Link href="/kanban-board" className="text-blue-500 underline">
-              Kanban board With Dnd-Kit
+            <Link
+              href="/kanban-board-complex"
+              className="text-blue-500 underline"
+            >
+              Kanban board Complex
             </Link>
           </li>
         </ul>

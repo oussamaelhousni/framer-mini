@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import {
   DndContext,
   DragStartEvent,
-  DragEndEvent,
   DragOverEvent,
   useDraggable,
   useDroppable,
@@ -158,7 +157,7 @@ export default function KanbanBoard() {
     }
   };
 
-  const handleDragEnd = (event: DragEndEvent) => {
+  const handleDragEnd = () => {
     if (!dropTarget || draggedTaskId === null) return;
 
     const dragged = tasks.find((t) => t.id === draggedTaskId);
