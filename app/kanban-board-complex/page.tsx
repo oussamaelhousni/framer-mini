@@ -373,7 +373,7 @@ function KanbanBoardComplex() {
   };
 
   const [isBrowser, settIsBrowser] = useState(false);
-  useEffect(() => settIsBrowser(true));
+  useEffect(() => settIsBrowser(true), []);
 
   return (
     <div className="min-h-screen w-full flex items-center px-[40px] overflow-auto bg-neutral-800">

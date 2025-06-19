@@ -26,6 +26,14 @@ export default function Home() {
               Kanban board Complex
             </Link>
           </li>
+          <li className="mb-2 tracking-[-.01em]">
+            <Link
+              href="/infinite-scroll-image-with-hover"
+              className="text-blue-500 underline"
+            >
+              Infinite Scrollable images
+            </Link>
+          </li>
         </ul>
       </main>
     </div>
